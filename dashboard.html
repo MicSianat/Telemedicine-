@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="/img/logo.png" alt="logo"></a>
+            </div>
+            <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">profile</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="dashboard.html">Appointment</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars" id="openMenu"></i>
+                <i class="fa-solid fa-times" id="closeMenu" style="display: none;"></i>
+            </div>
+        </nav>
+
+            <div class="appointments" id="appointmentsSection">
+                <h2>Appointment History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Doctor</th>
+                            <th>Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody id="appointmentList">
+                        <!-- Appointments will be loaded here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="map" id="mapSection"> <h2>Health Center Locator</h2> <div id="map"></div> </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+/* navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: lightseagreen;
+    color: white;
+    position: relative;
+}
+
+.logo img {
+    width: 80px;
+}
+
+#menuList {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#menuList li {
+    margin: 0 10px;
+}
+
+#menuList li a {
+    color: white;
+    text-decoration: none;
+}
+#menuList li a:hover{
+    color:white;
+    background-color:#007BFF;
+    border-radius: 5px;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+.profile, .appointments {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.appointments table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.appointments table, .appointments th, .appointments td {
+    border: 1px solid #ccc;
+}
+.appointments th, .appointments td {
+    padding: 10px;
+    text-align: left;
+}

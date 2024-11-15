@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .services-section {
+            padding: 20px;
+        }
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .service-card h3 {
+            margin-top: 0;
+        }
+        .service-card p {
+            color: #555;
+        }
+        .service-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           <a href="index.html"><img src="/img/logo.png" alt="logo" width="80px"></a>
+        </div>
+          <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="dashboard.html"class="appointment">Book appointment</a></li>
+            </ul>  
+            <div class="menu-icon"> 
+                <i class="fa-solid fa-bars" id="openMenu"></i> 
+                <i class="fa-solid fa-times" id="closeMenu" style="display: none;"></i> 
+            </div>
+    </nav>
+    <div class="services-section">
+        <h2>Our Health Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="https://scientificpathology.com/image/1647254580_s_why-healthcheck.jpg" alt="Health Check-up">
+                <h3>Health Check-up</h3>
+                <p>Comprehensive health check-ups to ensure your well-being and detect any early signs of health issues.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://gentledentalcare7days.com.au/wp-content/uploads/2023/05/helthy-oral-health.jpg" alt="Dental Care">
+                <h3>Dental Care</h3>
+                <p>Professional dental care services including cleanings, fillings, and preventive treatments.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://healthier.stanfordchildrens.org/wp-content/uploads/2021/11/Shots-scaled.jpg" alt="Vaccination">
+                <h3>Vaccination</h3>
+                <p>Stay protected with our range of vaccinations for children and adults.</p>
+            </div>
+            <div class="service-card">
+                 <img src="https://healthymind.fr/wp-content/uploads/2021/01/bienfaits-teleconsultation.png" alt="Teleconsultation">
+                  <h3>Teleconsultation</h3>
+                   <p>Get medical advice and consultation from the comfort of your home through our teleconsultation services.</p>
+            </div>
+             <div class="service-card">
+                 <img src="https://openminds.org.au/wp-content/uploads/2022/12/mental-health-support.jpeg" alt="Mental Health Support"> 
+                 <h3>Mental Health Support</h3> 
+                 <p>Access online mental health support and counseling to help you manage stress, anxiety, and other mental health concerns.</p> 
+            </div> <div class="service-card"> 
+                <img src="https://www.baker.edu/wp-content/uploads/22-BC-539-SEO-How_To_Find_a_Career_in_Telehealth-2x-v1.jpg" alt="Telemedicine"> 
+                <h3>Telemedicine</h3> 
+                <p>Receive medical care and prescriptions through our telemedicine platform, connecting you with doctors remotely.</p> 
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div style="text-align: center; color: black;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p style="text-align: center;">&copy; Telemedicine 2024. All Rights Reserved</p>
+    </footer>
+    <script src="/js/menu.js"></script>
+</body>
+</html>

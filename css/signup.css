@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+html {
+  background-image: url('/img/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* Ensure the body takes the full height of the viewport */
+  background-color: lightseagreen;
+}
+
+/* navigation*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: lightseagreen;
+  color: white;
+  position: relative;
+}
+
+.logo img {
+  width: 80px;
+}
+
+#menuList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#menuList li {
+  margin: 0 10px;
+}
+
+#menuList li a {
+  color: white;
+  text-decoration: none;
+}
+#menuList li a:hover{
+  color:white;
+  background-color:#007BFF;
+  border-radius: 5px;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.appointment {
+  display: inline-block;
+  text-decoration: none;
+  color:white;
+  border: 1px solid skyblue;
+  border-radius: 20px;
+  padding: 12px 34px;
+  background: #112a9c;
+  position: relative;
+  cursor: pointer;
+}
+.appointment:hover {
+  border: 1px;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+  margin:0 auto;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color:#112a9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.error {
+  color: red;
+}
+.success { color: green; }

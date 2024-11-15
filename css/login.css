@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/img/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+    background-color: lightseagreen;
+}
+
+/*login*/
+.container { 
+  background-color:  rgba(255, 255, 255, 0.8) ;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+  margin:0 auto;
+}
+.container h2 { 
+  margin-bottom: 20px;
+} 
+.container input[type="email"], .container input[type="password"] {
+  width: 100%; 
+  padding: 10px;
+  margin: 10px 0; 
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+}
+.container input[type="submit"] {
+  width: 100%; 
+  padding: 10px; 
+  background-color: #007bff;
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+} 
+.container input[type="submit"]:hover { 
+  background-color: #0056b3; 
+}
+ .container .links { 
+  margin-top: 20px; 
+} 
+.container .links a { 
+  color: #007bff;
+  text-decoration: none; 
+}
+
+/* navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: lightseagreen;
+    color: white;
+    position: relative;
+  }
+  
+  .logo img {
+    width: 80px;
+  }
+  
+  #menuList {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menuList li {
+    margin: 0 10px;
+  }
+  
+  #menuList li a {
+    color: white;
+    text-decoration: none;
+  }
+  #menuList li a:hover{
+    color:white;
+    background-color:#007BFF;
+    border-radius: 5px;
+  }
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+.appointment {
+  display: inline-block;
+  text-decoration: none;
+  color:white;
+  border: 1px solid skyblue;
+  border-radius: 20px;
+  padding: 12px 34px;
+  background: #112a9c ;
+  position: relative;
+  cursor: pointer;
+}
+  .appointment:hover {
+  border: 1px;
+  border-radius: 20px;
+  background-color: #112a9c;
+  transition: 1s;
+}
+/* Responsive menu */ 
+@media (max-width: 768px) {
+  #menuList { 
+      flex-direction: column; 
+      position: fixed; 
+      top: 60px; 
+      left: -100%; 
+      background-color: #333;
+      width: 100%; 
+      height:100vh; /* this covers the full viewport height */
+      transition: left 0.3s;
+      z-index: 1000; /* Ensures it floats above other content */
+  }
+  #menuList.show { 
+      left: 0;
+   } 
+  #menuList li { 
+      margin: 20px 0; 
+  } 
+  .menu-icon { 
+      display: block;
+  } 
+  .menu-icon i { 
+      font-size: 24px;
+  }
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <title>Telemedicine Registration</title>
+            <link rel="stylesheet" href="/css/signup.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        </head>
+        <body>
+            <nav>
+                <div class="logo">
+                <a href="index.html"><img src="/img/logo.png" alt="logo" width="80px"></a>
+                </div>
+                <ul id="menuList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="index.html">Contact Us</a></li>
+                        <li><a href="login.html"class="appointment">Book appointment</a></li>
+                    </ul>  
+                    <div class="menu-icon"> 
+                        <i class="fa-solid fa-bars" id="openMenu"></i> 
+                        <i class="fa-solid fa-times" id="closeMenu" style="display: none;"></i> 
+                    </div>
+            </nav>
+            <br>
+            <form id="userForm" >
+                <h1>Registration</h1>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required><span id="nameError" class="error"></span><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><span id="emailError" class="error"></span><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><span id="phoneError" class="error"></span><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><span id="passwordError" class="error"></span><br>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required><span id="confirmPasswordError" class="error"></span><br>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                </select><br>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="zambia">Zambia</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="kenya">Kenya</option>
+                <option value="ghana">Ghana</option>
+                <option value="south africa">South Africa</option>
+                <!-- more countries to be added as needed -->
+                </select><br>
+
+                <label>
+                <input type="checkbox" id="terms" name="terms" required> I agree to the Terms and Conditions
+                </label><br><br>
+                <button style="align-content: center;" type="submit">Submit</button>
+            </form>
+        </footer>
+        <br>
+        <br>
+        <div style="text-align: center; color: black;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p style="text-align: center;">&copy; Telemedicine 2024. All Rights Reserved</p>
+            <script src="/js/Registration.js"></script>
+        </body>
+    </html>

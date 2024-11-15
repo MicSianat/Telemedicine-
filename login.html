@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    </head>
+        <body>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="/img/logo.png" alt="logo"></a>
+                </div>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="index.html">Contact Us</a></li>
+                    <li><a href="profile.html" class="appointment">Book appointment</a></li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars" id="openMenu"></i>
+                    <i class="fa-solid fa-times" id="closeMenu" style="display: none;"></i>
+                </div>
+            </nav>
+            <br><br>
+            <div class="container">
+                <h2 style="text-align: center;"> Welcome to Tele<span style="color: lightseagreen;">Med</span> </h2>
+                <form action="profile.html" method="post">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <input type="submit" value="Login"  >
+                </form>
+                <div class="links">
+                    <a href="forgot-password.html">Forgot Password?</a> | 
+                    <p>Don't have an account? <a href="signup.html">Create here</a></p>
+                </div>
+            </div>
+            <br><br><br>
+            <footer>
+                <div style="text-align: center; color: black;">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <p style="text-align: center;">&copy; Telemedicine 2024. All Rights Reserved</p>
+            </footer>
+           <script src="/js/menu.js"></script>
+        </body>
+    </html>
+
